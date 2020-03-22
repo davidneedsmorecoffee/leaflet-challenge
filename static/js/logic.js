@@ -29,7 +29,7 @@ d3.json(tectonicUrl, function(tecData) {
 
 function createFeatures(earthquakeData, ) {
 
-    // Define a function we want to run once for each feature in the features array
+    // Define a function to run once for each feature in the features array
     // Give each feature a popup describing the place and time of the earthquake
     function onEachFeature(feature, layer) {
     layer.bindPopup(
@@ -60,7 +60,6 @@ function createFeatures(earthquakeData, ) {
   createMap(earthquakes);
 }
 
-// 17_1_10-Stu_Geo-Json
 function createMap(earthquakes) {
 
     // Define map layers
