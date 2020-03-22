@@ -13,11 +13,9 @@ d3.json(queryUrl, function(data) {
     createFeatures(data.features);
   });
 
-// //17_01_08-Ins_Layers
 var tectonic = new L.LayerGroup();
 
-// 17_02_01-Evr_BasicNYCBoroughs
-// Grabbing our GeoJson data
+// Grabbing the GeoJson data
 d3.json(tectonicUrl, function(tecData) {
   // Creating a geoJSON layer with the retrieved data
   L.geoJson(tecData, {
@@ -29,7 +27,6 @@ d3.json(tectonicUrl, function(tecData) {
   .addTo(tectonic);  
 });
 
-// 17_1_10-Stu_Geo-Json
 function createFeatures(earthquakeData, ) {
 
     // Define a function we want to run once for each feature in the features array
