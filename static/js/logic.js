@@ -2,8 +2,8 @@
 var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
 
 // plot a second data set on the map to illustrate the relationship between tectonic plates and seismic activity. 
-// pull in a second data set and visualize it along side of the original set of data. 
-// Data on tectonic plates can be found at https://github.com/fraxen/tectonicplates. tetonic plate
+// pull in a second data set and visualize it with the original set of data. 
+// Data on tectonic plates can be found at https://github.com/fraxen/tectonicplates
 // https://github.com/fraxen/tectonicplates/tree/master/GeoJSON
 var tectonicUrl = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
@@ -104,7 +104,7 @@ function createMap(earthquakes) {
       "Tectonic Plates": tectonic
     };
   
-    // Create our map, giving it the streetmap and earthquakes layers to display on load
+    // Create the map, giving it different layers, e.g., streetmap, earthquakes, to display on load
     var myMap = L.map("map", {
       center: [
         37.09, -95.71
