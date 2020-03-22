@@ -5,7 +5,7 @@ In this demo, leaflet was used in constructing a map with overlays that illustra
 * The data markers reflect the magnitude of the earthquake via size and color (see legend)
 * Earthquakes with higher magnitudes are shown as larger circles that are darker in color.
    
-To run the app, please enter your API key in the config.js file before running python -m http.server/.
+To run the app, please enter your API key in the config.js file before running `python -m http.server`.
  
 Data on tectonic plates can be found at https://github.com/fraxen/tectonicplates and https://github.com/fraxen/tectonicplates/tree/master/GeoJSON
 
