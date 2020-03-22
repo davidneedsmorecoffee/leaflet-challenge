@@ -1,8 +1,9 @@
 // set up queryurl
 var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
 
-// The USGS wants you to plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. You will need to pull in a second data set and visualize it along side your original set of data. Data on tectonic plates can be found at https://github.com/fraxen/tectonicplates.
-// tetonic plate
+// plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. 
+// You will need to pull in a second data set and visualize it along side your original set of data. 
+// Data on tectonic plates can be found at https://github.com/fraxen/tectonicplates. tetonic plate
 // https://github.com/fraxen/tectonicplates/tree/master/GeoJSON
 var tectonicUrl = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
