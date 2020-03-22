@@ -120,7 +120,6 @@ function createMap(earthquakes) {
       collapsed: false
     }).addTo(myMap);
 
-    // 17_02_04-Par_MoneyChoropleth
     // Set up the legend
     var legend = L.control({position: "bottomleft"});
     legend.onAdd = function(myMap){
@@ -148,7 +147,7 @@ function radiusAs(value){
     return value*30000
 }
 
-// use combination of mspaint and RGB to HEX to determine color to match guide
+// use a combination of mspaint and RGB to HEX to determine color to match guide
 // https://javascript.info/ifelse
 // https://www.digitalocean.com/community/tutorials/how-to-write-conditional-statements-in-javascript
 function colorAs(magnitude) {
