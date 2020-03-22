@@ -61,8 +61,7 @@ function createFeatures(earthquakeData, ) {
 }
 
 function createMap(earthquakes) {
-
-    // Define map layers
+    // Define the map layers
     var outdoors = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
       attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
       maxZoom: 18,
@@ -115,7 +114,7 @@ function createMap(earthquakes) {
     });
 
     // Create a layer control
-    // Pass in our baseMaps and overlayMaps
+    // Pass in the baseMaps and overlayMaps
     // Add the layer control to the map
     L.control.layers(baseMaps, overlayMaps, {
       collapsed: false
